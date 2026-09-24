@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #ec407a;
+  margin-bottom: 25px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#addTask {
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#addTask:hover {
+  background-color: #d81b60;
+}
+
+#taskList {
+  list-style: none;
+}
+
+.task {
+  background: #ffe4ec;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.3);
+  transition: 0.2s ease;
+}
+
+.task-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+  text-align: left;
+}
+
+.check-circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ec407a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  flex-shrink: 0;
+}
+
+.check-circle svg {
+  width: 14px;
+  height: 14px;
+  color: #ec407a;
+  display: none;
+}
+
+.task.completed .check-circle svg {
+  display: inline;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete {
+  color: #ec407a;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete:hover {
+  transform: scale(1.2);
+}
