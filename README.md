@@ -1,4 +1,4 @@
-# To Do List - Advanced MERN Architecture Application
+# TaskPulse - Advanced MERN To-Do List Application
 
 An **Advanced MERN Architecture Task Management & To-Do Application** with real-time task status workflows, JWT authentication, pagination, multi-criteria filtering, sorting, subtask breakdowns, and interactive productivity analytics.
 
@@ -32,7 +32,7 @@ An **Advanced MERN Architecture Task Management & To-Do Application** with real-
 - Secure Bearer JWT authorization headers.
 
 ### 5. **Rich Aesthetic UI / UX**
-- Soft Pink & Rose gradient theme.
+- Dark Mode & Light Mode theme toggle.
 - Glassmorphism design system with glowing status badges and smooth animations.
 - Confetti celebration animation upon completing tasks.
 
@@ -42,7 +42,7 @@ An **Advanced MERN Architecture Task Management & To-Do Application** with real-
 
 ```
 TO DO LIST/
-├── backend/                   # Node.js + Express + MongoDB Backend REST API
+├── server/                    # Node.js + Express + MongoDB Backend REST API
 │   ├── config/                # Database connection (db.js)
 │   ├── controllers/           # authController.js, taskController.js
 │   ├── middleware/            # authMiddleware.js, errorHandler.js
@@ -51,7 +51,7 @@ TO DO LIST/
 │   ├── .env                   # Environment variables (PORT, MONGODB_URI, JWT_SECRET)
 │   ├── server.js              # Express app entry point
 │   └── package.json           # Backend dependencies
-├── frontend/                  # React.js SPA (Vite + React)
+├── client/                    # React.js SPA (Vite + React)
 │   ├── src/
 │   │   ├── components/        # Navbar, TaskCard, TaskBoard, TaskList, StatsOverview, FilterBar, AnalyticsView, TaskModal, AuthModal, Pagination
 │   │   ├── context/           # AuthContext.jsx, TaskContext.jsx
@@ -74,7 +74,7 @@ TO DO LIST/
 1. **Start MongoDB**: Make sure MongoDB service is running locally (`mongodb://127.0.0.1:27017/todo_app`).
 2. **Start Backend Server**:
    ```bash
-   cd backend
+   cd server
    npm install
    npm run dev
    ```
@@ -82,7 +82,7 @@ TO DO LIST/
 
 3. **Start React Frontend**:
    ```bash
-   cd frontend
+   cd client
    npm install
    npm run dev
    ```

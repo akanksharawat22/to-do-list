@@ -1,5 +1,5 @@
 {
-  "name": "mern-todo-backend",
+  "name": "mern-todo-server",
   "version": "1.0.0",
   "description": "Advanced MERN Architecture To-Do List Backend REST API",
   "main": "server.js",
